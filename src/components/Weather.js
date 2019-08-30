@@ -2,8 +2,7 @@ import React from 'react';
 
 const Weather = props => (
   <div className='weather__info'>
-    {/* and operator used like this in jsx:if city and country props have some value, then display the <p> tag ... */}
-
+    {/* 'logical and', used when there is no 'else' case. eg: if x then y ---> x && y */}
     {props.city && props.country && (
       <p className='weather__key'>
         Location:{' '}
@@ -12,11 +11,12 @@ const Weather = props => (
         </span>
       </p>
     )}
-    {props.temperature && (
+    {
       <p className='weather__key'>
-        Temperature: <span className='weather__value'>{props.temperature}</span>
+        {/* 'ternary operator' is the one with 'elsel case. eg: if x then y else z ----> x ? y : z  */}
+        {props.temperature ? 'Temperature: {props.temperature}' : undefined}
       </p>
-    )}
+    }
     {props.humidity && (
       <p className='weather__key'>
         Humidity: <span className='weather__value'>{props.humidity}</span>
