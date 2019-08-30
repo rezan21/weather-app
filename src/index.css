@@ -3,3 +3,6 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+html {
+  background: linear-gradient(to right, #e67e22, #e74c3c);
+}

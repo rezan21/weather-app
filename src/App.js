@@ -53,7 +53,7 @@ class App extends Component {
         <div className='wrapper'>
           <div className='main'>
             <div className='container'>
-              <div className='row'>
+              <div className='rowsa thisa'>
                 <div className='col-xs-5 title-container'>
                   <Titles />
                 </div>
